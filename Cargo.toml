@@ -1,0 +1,25 @@
+[package]
+name = "melody-bay"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Stephen Belanger <admin@stephenbelanger.com>"]
+repository = "https://github.com/qard/melody-bay"
+homepage = "https://github.com/qard/melody-bay"
+documentation = "https://docs.rs/melody-bay"
+rust-version = "1.88"
+description = "Kira-compatible generated synthesis sound sources."
+readme = "README.md"
+keywords = ["audio", "webaudio", "kira", "sequencer", "synthesis"]
+categories = ["multimedia::audio"]
+exclude = [
+    "target/**",
+    "wip/**",
+]
+
+[dependencies]
+kira = "0.10"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
